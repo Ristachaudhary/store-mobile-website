@@ -1,0 +1,11 @@
+.categories_parent_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.child-container{
+    width: 48%; /* This ensures two items per row (50% with a small gap) */
+  height: 200px;
+ 
+ 
+}

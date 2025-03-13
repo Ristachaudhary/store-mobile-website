@@ -1,0 +1,41 @@
+
+.women-categories_parent_container{
+width: 200px;
+height: auto;
+/* overflow: hidden; */
+border-radius: 15px;
+box-shadow: rgb(192, 191, 191) 4px 8px 20px;
+/* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+
+}
+.women-categories_parent_container_img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.women-categories_parent_container_text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    /* margin-top: 8px; */
+}
+.categories_buynowBtn_Plus{
+    display: flex;
+    justify-content: space-between;
+}
+.categories_buynowBtn{
+    border-radius: 8px;
+}
+.categories_PlusBtn{
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
