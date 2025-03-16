@@ -1,40 +1,20 @@
 import React from "react";
-import WomenCategories from "../WomenCategories";
+import CategoriesComponent from "../CategoriesComponent";
 import "./style.css";
-import Women from "../assets/women.jpg";
-import Mens from "../assets/mens.jpeg";
-import Kids from "../assets/kids.jpeg";
-import Footwear from "../assets/footwear.jpg";
+import categories from "../Data/category"
+import {Link} from "react-router-dom";
 
-const categories =[
-    {
-        id:1,
-        image: Women,
-        title: "Women Clothing",
-    },
-    {
-        id: 2,
-        image: Mens,
-        title: "Mens Clothing",
-    },
-    {
-        id: 3,
-        image: Kids,
-        title: "Kids Clothing",
-    },
-    {
-        id: 4,
-        image: Footwear,
-        title: "Footwear",
-    }
-]
 const Categories = () =>{
     return (
 <div className="categories_parent_container">
     {
         categories.map((item, index)=>{
+
             return(
-                <WomenCategories className="child-container" key={item.id} image={item.image} title={item.title}/>
+                <Link to={item.link}>
+                 <CategoriesComponent className="child-container" key={item.id} image={item.image} title={item.title} />
+                </Link>
+               
 
             );
         })
@@ -42,9 +22,7 @@ const Categories = () =>{
 
 
 
-    {/* <WomenCategories className="child-container"/>
-    <WomenCategories className="child-container"/>
-    <WomenCategories className="child-container"/> */}
+  
 </div>
     )
 }

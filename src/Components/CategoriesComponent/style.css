@@ -23,19 +23,3 @@ box-shadow: rgb(192, 191, 191) 4px 8px 20px;
     font-weight: bold;
     /* margin-top: 8px; */
 }
-.categories_buynowBtn_Plus{
-    display: flex;
-    justify-content: space-between;
-}
-.categories_buynowBtn{
-    border-radius: 8px;
-}
-.categories_PlusBtn{
-    width: 30px;
-    height: 30px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

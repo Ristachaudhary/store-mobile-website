@@ -1,0 +1,11 @@
+.men-categories_page_parent_buynowBtn_container{
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgb(192, 191, 191) 4px 8px 20px;
+}
+.men-categories_page_parent_container_img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
