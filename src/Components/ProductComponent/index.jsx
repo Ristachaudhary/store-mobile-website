@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
-
 const ProductComponent = (props) => {
 //   const [showBuyNowBtn, setShowBuyNowBtn] = useState(true);
   const [count, setCount] = useState(0);
@@ -16,7 +15,8 @@ const ProductComponent = (props) => {
   }
 
   return (
-    <div className="product_comp_parent_buynowBtn_container">
+ 
+ <div className="product_comp_parent_buynowBtn_container">
       <div className="product_comp_parent_container_img_text">
         <img src={props.image} className="product_comp_container_img" />
         <div className="product_comp_text">
@@ -47,6 +47,7 @@ const ProductComponent = (props) => {
         </div>
       </div>
     </div>
+
   );
 };
 export default ProductComponent;

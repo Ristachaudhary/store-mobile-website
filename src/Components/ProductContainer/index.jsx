@@ -3,6 +3,8 @@ import ProductComponent from "../ProductComponent";
 import "./style.css";
 import Data from "../Data/product";
 import {useLocation} from "react-router-dom";
+import Header from "../Header";
+
 
 
 // find the path 
@@ -27,7 +29,9 @@ const ProductContainer = () =>{
 //  It is a shortcut to access an object property dynamically using bracket notation.
     
     return(
-<div className="product-container-parent-container">
+        <>
+        <Header/>
+        <div className="product-container-parent-container">
     {
         programDataByRoute.map((item, index)=>(
 
@@ -39,6 +43,8 @@ const ProductContainer = () =>{
     )
     }
 </div>
+        </>
+
     )
 }
 export default ProductContainer;
