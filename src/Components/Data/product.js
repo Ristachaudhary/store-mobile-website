@@ -51,5 +51,50 @@ women : [
         image: MensImg4,
         title: "Navyblue Suit",
     },
+],
+kids: [
+    {
+        id: 1,
+        image: MensImg1,
+        title: "Brown Shirt",
+    },
+    {
+        id: 2,
+        image: MensImg2,
+        title: "Offwhite Shirt",
+    },
+    {
+        id: 3,
+        image: MensImg3,
+        title: "Formal Suit",
+    },
+    {
+        id: 4,
+        image: MensImg4,
+        title: "Navyblue Suit",
+    },
+],
+shoes: [
+    {
+        id: 1,
+        image: MensImg1,
+        title: "Brown Shirt",
+    },
+    {
+        id: 2,
+        image: MensImg2,
+        title: "Offwhite Shirt",
+    },
+    {
+        id: 3,
+        image: MensImg3,
+        title: "Formal Suit",
+    },
+    {
+        id: 4,
+        image: MensImg4,
+        title: "Navyblue Suit",
+    },
 ]
 }
+

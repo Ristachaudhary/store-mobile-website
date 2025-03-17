@@ -25,3 +25,10 @@ const ProductComponent = (props) =>{
     )
 }
 export default ProductComponent;
+
+// 🔥 What This Code Does:
+// ✅ Displays a product card with:
+// ✔️ An image
+// ✔️ A product title
+// ✔️ A "Buy Now" button
+// ✔️ A "+" icon
