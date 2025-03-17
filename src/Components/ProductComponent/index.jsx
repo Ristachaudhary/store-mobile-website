@@ -3,11 +3,17 @@ import "./style.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const ProductComponent = (props) => {
-  const [showBuyNowBtn, setShowBuyNowBtn] = useState(true);
+//   const [showBuyNowBtn, setShowBuyNowBtn] = useState(true);
+  const [count, setCount] = useState(0);
 
   const handleToggleAddToCartBtn = () => {
-    setShowBuyNowBtn(!showBuyNowBtn);
+    // setShowBuyNowBtn(false);
+    setCount(count + 1);
+    
   };
+  const handleToggleMinusToCartBtn = () =>{
+    setCount(count -1);
+  }
 
   return (
     <div className="product_comp_parent_buynowBtn_container">
@@ -19,17 +25,18 @@ const ProductComponent = (props) => {
       </div>
 
       <div className="product_comp_buynowBtn_Plus">
-      {showBuyNowBtn
+      {count===0
       ?
       <button className="product_comp_buynowBtn">Buy Now</button>
       :
       <div className="product_comp_minusBtn_quantity">
         <div
           className="product_comp_minusBtn"
+          onClick={handleToggleMinusToCartBtn}
         >
           <FaMinus />
         </div>
-        <div>Quantity</div>
+        <div>{count}</div>
       </div>
     }
         <div
