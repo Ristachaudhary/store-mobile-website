@@ -29,7 +29,7 @@
 .product_comp_buynowBtn{
     border-radius: 8px;
 }
-.product_comp_PlusBtn{
+.product_comp_PlusBtn, .product_comp_minusBtn{
     width: 30px;
     height: 30px;
     background-color: aliceblue;
@@ -38,3 +38,8 @@
     align-items: center;
     justify-content: center;
 }
+.product_comp_minusBtn_quantity{
+    display: flex;
+gap:15px;
+}
+
