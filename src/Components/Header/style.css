@@ -13,3 +13,9 @@
     border-radius: 50%;
     background-color: aliceblue;
 }
+.cart-icon{
+    width: 30px;
+    height: 30px;
+    color: blue;
+    margin-right: 5px;
+}
