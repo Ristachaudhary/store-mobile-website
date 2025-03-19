@@ -3,7 +3,9 @@ import "./style.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import {useNavigate} from "react-router-dom";
+import { useCart } from "../../Context/Cartcontext";
 const Header = () =>{
+    const {cart} = useCart();
     const navigate = useNavigate();
     const handleGoBackBtn = () =>{
     navigate(-1);
@@ -17,6 +19,8 @@ const Header = () =>{
     <FaArrowLeft />
     </div>
  <div><FaShoppingCart className="cart-icon" /></div>
+ <div>{cart.length}</div>
+
 </div>
     )
 }

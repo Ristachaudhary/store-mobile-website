@@ -32,66 +32,66 @@ women : [
   ],
   men: [
     {
-        id: 1,
+        id: 5,
         image: MensImg1,
         title: "Brown Shirt",
     },
     {
-        id: 2,
+        id: 6,
         image: MensImg2,
         title: "Offwhite Shirt",
     },
     {
-        id: 3,
+        id: 7,
         image: MensImg3,
         title: "Formal Suit",
     },
     {
-        id: 4,
+        id: 8,
         image: MensImg4,
         title: "Navyblue Suit",
     },
 ],
 kids: [
     {
-        id: 1,
+        id: 9,
         image: MensImg1,
         title: "Brown Shirt",
     },
     {
-        id: 2,
+        id: 10,
         image: MensImg2,
         title: "Offwhite Shirt",
     },
     {
-        id: 3,
+        id: 11,
         image: MensImg3,
         title: "Formal Suit",
     },
     {
-        id: 4,
+        id: 12,
         image: MensImg4,
         title: "Navyblue Suit",
     },
 ],
 shoes: [
     {
-        id: 1,
+        id: 13,
         image: MensImg1,
         title: "Brown Shirt",
     },
     {
-        id: 2,
+        id: 14,
         image: MensImg2,
         title: "Offwhite Shirt",
     },
     {
-        id: 3,
+        id: 15,
         image: MensImg3,
         title: "Formal Suit",
     },
     {
-        id: 4,
+        id: 16,
         image: MensImg4,
         title: "Navyblue Suit",
     },

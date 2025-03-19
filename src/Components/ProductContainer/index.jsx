@@ -35,7 +35,7 @@ const ProductContainer = () =>{
     {
         programDataByRoute.map((item, index)=>(
 
-            <ProductComponent key={index}  image={item.image} title={item.title}/>
+            <ProductComponent key={index}  image={item.image} title={item.title} product={item}/>
         )
 
         

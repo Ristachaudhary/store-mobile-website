@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { useCart } from "../../Context/Cartcontext";
+
+
 const ProductComponent = (props) => {
+
+    const {addToCart} = useCart();
 //   const [showBuyNowBtn, setShowBuyNowBtn] = useState(true);
   const [count, setCount] = useState(0);
 
@@ -43,7 +48,7 @@ const ProductComponent = (props) => {
           className="product_comp_PlusBtn"
           onClick={handleToggleAddToCartBtn}
         >
-          <FaPlus />
+          <FaPlus onClick={()=>addToCart(props.product)}/>
         </div>
       </div>
     </div>
