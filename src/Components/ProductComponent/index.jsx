@@ -6,31 +6,39 @@ import { useCart } from "../../Context/Cartcontext";
 
 const ProductComponent = (props) => {
 
-    const {addToCart} = useCart();
+    const {cart, addToCart, minusToCart} = useCart();
 //   const [showBuyNowBtn, setShowBuyNowBtn] = useState(true);
+
+
+const existingProduct = cart.find((item)=>item.id === props.product.id)
+console.log({existingProduct});
+
+
   const [count, setCount] = useState(0);
 
   const handleToggleAddToCartBtn = () => {
     // setShowBuyNowBtn(false);
     setCount(count + 1);
+    addToCart(props.product);
     
   };
   const handleToggleMinusToCartBtn = () =>{
     setCount(count -1);
+    minusToCart(props.product);
   }
 
   return (
  
  <div className="product_comp_parent_buynowBtn_container">
       <div className="product_comp_parent_container_img_text">
-        <img src={props.image} className="product_comp_container_img" />
+        <img src={props.product.image} className="product_comp_container_img" />
         <div className="product_comp_text">
-          <p>{props.title}</p>
+          <p>{props.product.title}</p>
         </div>
       </div>
 
       <div className="product_comp_buynowBtn_Plus">
-      {count===0
+      {existingProduct.quantity===0
       ?
       <button className="product_comp_buynowBtn">Buy Now</button>
       :
@@ -48,7 +56,7 @@ const ProductComponent = (props) => {
           className="product_comp_PlusBtn"
           onClick={handleToggleAddToCartBtn}
         >
-          <FaPlus onClick={()=>addToCart(props.product)}/>
+          <FaPlus />
         </div>
       </div>
     </div>
