@@ -38,7 +38,7 @@ console.log({existingProduct});
       </div>
 
       <div className="product_comp_buynowBtn_Plus">
-      {existingProduct.quantity===0
+      {!existingProduct
       ?
       <button className="product_comp_buynowBtn">Buy Now</button>
       :
